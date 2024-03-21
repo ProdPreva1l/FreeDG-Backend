@@ -1,20 +1,22 @@
 {
-  "name": "djs-bot-template",
+  "name": "freedg-backend",
   "version": "1.0.0",
   "description": "bot template",
-  "main": "index.js",
+  "main": "Main.js",
+  "type": "module",
   "scripts": {
     "prod": "node . --prod",
-    "deploy-prod": "node deploycmds.js --prod",
-    "dev": "node . --dev",
-    "deploy-dev": "node deploycmds.js --dev"
+    "dev": "node . --dev"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@discordjs/ws": "^1.0.2",
-    "discord.js": "14.14.1",
-    "node-yaml-config": "^1.0.0"
+    "chalk": "^5.3.0",
+    "express": "^4.19.1",
+    "express-rate-limiter-redis": "^1.1.0",
+    "mongodb": "^6.5.0",
+    "node-yaml-config": "^1.0.0",
+    "redis": "^4.6.13"
   }
 }
