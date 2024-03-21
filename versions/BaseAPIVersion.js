@@ -13,4 +13,15 @@ export class BaseAPIVersion {
             throw new Error("getMysql method must be implemented")
         }
     }
+
+    getRedis(uri) {
+        return undefined;
+    }
+
+    getMongo(uri) {
+        return undefined;
+    }
+    getMysql(uri) {
+        return undefined;
+    }
 }
